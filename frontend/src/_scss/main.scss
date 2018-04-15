@@ -1,0 +1,10 @@
+$color-orange: #f98a09;
+
+body {
+    background-color: $color-orange;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
