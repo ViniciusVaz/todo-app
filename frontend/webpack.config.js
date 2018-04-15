@@ -21,17 +21,25 @@ module.exports = {
                 ]
             },
             {
+                test: /\.css$/,
+                use: [
+                    "style-loader",
+                    "css-loader"
+                ]
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg|woff|ttf|eot|woff2)$/,
+                use: "url-loader?limit=10000",
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader, 
                     "css-loader",
                     "postcss-loader",
-                    "sass-loader"
+                    "sass-loader",
+                    "style-loader"
                 ]
-            },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
             }
         ]
     },

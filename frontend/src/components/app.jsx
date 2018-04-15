@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from "react"
 import Todo from './todo/todo.jsx'
 import About from '../components/about/about.jsx'
