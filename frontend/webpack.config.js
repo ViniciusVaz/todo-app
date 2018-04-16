@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+    , MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     module: {
@@ -15,7 +15,7 @@ module.exports = {
                 test: /\.html$/,
                 use: [
                     {
-                        loader: "html-loader",
+                        loader: 'html-loader',
                         options: { minimize: true }
                     }
                 ]
@@ -23,22 +23,22 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    "style-loader",
-                    "css-loader"
+                    'style-loader',
+                    'css-loader'
                 ]
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg|woff|ttf|eot|woff2)$/,
-                use: "url-loader?limit=10000",
+                use: 'url-loader?limit=10000'
             },
             {
                 test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader, 
-                    "css-loader",
-                    "postcss-loader",
-                    "sass-loader",
-                    "style-loader"
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                    'style-loader'
                 ]
             }
         ]
@@ -50,12 +50,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html",
-            filename: "./index.html"
+            template: './src/index.html',
+            filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
+            filename: '[name].css',
+            chunkFilename: '[id].css'
         })
     ]
 }
