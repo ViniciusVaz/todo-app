@@ -1,3 +1,3 @@
 # todo-app
 
-Aplição de estudo utilizando MongoDB e React
+Aplicação de estudo utilizando MongoDB e React
