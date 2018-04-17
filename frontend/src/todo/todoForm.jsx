@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '../helpers/grid.jsx'
-import IconButton from '../template/iconButton.jsx'
+import IconButton from '../helpers/iconButton.jsx'
 
 export default props => (
     <div role='form' className='todoForm'>
