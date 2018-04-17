@@ -1,8 +1,8 @@
 import React from 'react'
 import { Router, Route, Redirect, hashHistory } from 'react-router'
 
-import Todo from './components/todo/todo.jsx'
-import About from './components/about/about.jsx'
+import Todo from '../todo/todo.jsx'
+import About from '../about/about.jsx'
 
 export default props => (
     <Router history={hashHistory}>
